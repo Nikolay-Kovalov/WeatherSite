@@ -8,7 +8,79 @@
     <script type="module" src="./index.js"></script>
   </head>
   <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
+    <header class="header">
+      <form action="submit">
+        <input
+          type="text"
+          placeholder="Enter your city"
+          class="header_input"
+          name="header_city"
+        />
+        <button type="submit" class="header_form_btn">Get the weather</button>
+      </form>
+    </header>
+    <main class="main">
+      <ul class="city_list">
+        <li class="city_item">
+          <div class="front" data-city="1"></div>
+          <!-- <div class="city_item_title_wrapper">
+            <h2 class="city_item_title">Kyiv</h2>
+            <div class="circle"></div>
+          </div>
+          <h3 class="city_item_temp_title">32C&#176;</h3>
+          <div class="city_item_text_wrapper">
+            <p class="city_item_text">Wind: 21 kph</p>
+            <p class="city_item_text">Pressure: 1121 mb</p>
+          </div> -->
+          <div class="back" data-city="21">
+            <!-- <div class="content">
+              <p class="content_text">Text</p>
+              <p class="content_text">Text</p>
+              <p class="content_text">Text</p>
+            </div> -->
+          </div>
+        </li>
+        <li class="city_item">
+          <div class="front" data-city="2"></div>
+          <div class="back" data-city="22"></div>
+        </li>
+        <li class="city_item">
+          <div class="front" data-city="3"></div>
+          <div class="back" data-city="23"></div>
+        </li>
+        <li class="city_item">
+          <div class="front" data-city="4"></div>
+          <div class="back" data-city="24"></div>
+        </li>
+        <li class="city_item">
+          <div class="front" data-city="5"></div>
+          <div class="back" data-city="25"></div>
+        </li>
+        <li class="city_item">
+          <div class="front" data-city="6"></div>
+          <div class="back" data-city="26"></div>
+        </li>
+      </ul>
+    </main>
+    <footer class="footer">
+      <a class="footer_link" href="./index.html">BestWeather.com</a>
+      <div class="footer_favourite_wrapper">
+        <h2 class="footer_favourites">Favourites</h2>
+        <ul class="footer_favourite_list">
+          <li class="footer_list_item_favourite">Kiev</li>
+          <li class="footer_list_item_favourite">Odessa</li>
+          <li class="footer_list_item_favourite">Donetsk</li>
+          <li class="footer_list_item_favourite">London</li>
+          <li class="footer_list_item_favourite">Doha</li>
+          <li class="footer_list_item_favourite">Mirissa</li>
+          <li class="footer_list_item_favourite">Paris</li>
+          <li class="footer_list_item_favourite">Berlin</li>
+          <li class="footer_list_item_favourite">New York</li>
+          <li class="footer_list_item_favourite">Colombo</li>
+          <li class="footer_list_item_favourite">Frankfurt</li>
+          <li class="footer_list_item_favourite">Lissabon</li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
