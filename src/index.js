@@ -15,7 +15,7 @@ const cityBack6 = document.querySelector("div[data-city='26']");
 const arrCity = [city1, city2, city3, city4, city5, city6]
 const arrCityBack = [cityBack1, cityBack2, cityBack3,cityBack4,cityBack5,cityBack6]
 
-const cities = ["Kyiv","Vyshgorod", "Odesa", "Doha", "Mirissa", "Krabi"] 
+const cities = ["Kyiv","Lviv", "Odesa", "Doha", "Mirissa", "Krabi"] 
 
 const getWeather = async () => {
 
